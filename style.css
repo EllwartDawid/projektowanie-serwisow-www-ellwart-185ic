@@ -1,0 +1,39 @@
+*
+{
+    font-family:sans-serif;
+}
+h1
+{
+    color: red;
+    font-family:sans-serif;
+}
+span
+{
+    display: inline;
+    margin-top:15px;
+}
+.b
+{
+font-weight:700 ;   
+}
+.i
+{
+    font-style:italic;
+}
+.u
+{
+    text-decoration:underline;
+}
+ul
+{
+    list-style-type: circle;
+}
+ol
+{
+    background-color:gray;
+    padding:20px;
+    border-width:5px;
+    border-style:solid;
+    border-color:red;
+    border-radius:25px
+}

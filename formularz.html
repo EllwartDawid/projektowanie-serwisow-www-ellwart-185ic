@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang='pl'>
+    <head>
+        <meta charset='UTF-8'/>
+        <title>Praca z systemem kontroli wersji. Podstawy WWW.</title>
+        <link rel='stylesheet' type='text/css' href='style.css'/>
+        <link rel='icon' href='images/favicon.ico'/>
+        <meta name='description' content='Pierwsza strona www'/>
+        <meta name=keywords content='serwisy www, html'/>
+        <meta name='author' content='Dawid Ellwart'/>
+    </head>
+    <body>
+        <div class="container">
+            
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="formularz.html">Formularz</a></li>
+            <li><a href="podrecznik.html">Podręcznik</a></li>
+            <li><a href="list.html">List</a></li>
+        
+        <div class="Formularz">
+            <div class="Formularz1">
+                <form action='' method="get" enctype="text/plain">
+                    <div>
+                        <p>Imie:<input name="Imię" type='text' placeholder="Podaj imie"></p>
+                        <p>Nazwisko:<input name="Nazwisko" type='text' placeholder="Podaj nazwisko"></p>
+                        <p>Email:<input name="email" type='email' required placeholder="Podaj email"></p>
+                        <p>Hasło:<input type='password' name='haslo' placeholder="Podaj hasło"></p>
+                        <p>Data urodzenia:<input name='data' type='date'></p> 
+                        <p>Podaj płeć:</p>
+                        <p><label><input type="radio" name="Płeć" value="Kobieta" checked='checked'>Kobieta</label></p>
+                        <p><label><input type="radio" name="Płeć" value="Mężczyzna">Mężczyzna</label></p>
+                        <p>Napisz coś o sobie</p>
+                        <textarea name='opis' rows='10' cols='40' placeholder='Napisz o sobie dwa zdania'></textarea>
+                        <p>Jaki jest twój ulubiony klub piłkarski?</p>
+                        <select name='Klub piłkarski' multiple='multiple' size="7">
+                            <option>Real Madryt</option>
+                            <option>FC Barcelona</option>
+                            <option>Man United</option>
+                            <option>Man City</option>
+                            <option>Liverpool</option>
+                            <option>Juventus</option>
+                            <option>PSG</option>
+                            <option>inny</option>
+                        </select>
+      
+                        <p>Kto jest najlepszym piłkarzem na świecie?</p>
+                        <input type="checkbox" name='Piłkarz' value='Ronaldo'>Ronaldo<br>
+                        <input type="checkbox" name='Piłkarz' value='Messi'>Messi<br>
+                        <input type="checkbox" name='Piłkarz' value="Lewandowski">Lewandowski<br>
+                        <input type="checkbox" name='Piłkarz' value="Inna">Inny (podaj jaki):
+                        <input name='Piłkarz'>
+                        <input type="submit" value='Prześłij formularz'>
+                        <input type="reset" value="Restartuj">
+                    </div>
+                </form>
+            </div>
+            </div>
+        <div class="container">
+            <div class='podsumowanie'> Dziękujemy za wypełnienie ankiety</div>
+        </div>
+        </div> 
+    </body>
+
+</html>

@@ -1,39 +1,132 @@
-*
+
+body
 {
-    font-family:sans-serif;
+    background-color: darkgrey;
+    color: white;
+    font-family: 'Lato',sans-serif;
+    font-size: 20px;
 }
-h1
+
+.container
 {
-    color: red;
-    font-family:sans-serif;
+    margin-top:50px;
+    margin-bottom:50px;
+    border:1px solid grey;
+    width:1300px; 
+    margin-left:50px;
+    margin-right:50px
 }
-span
+.List
 {
-    display: inline;
-    margin-top:15px;
+    width: 100%;
+    height: auto;
+    background-color: navajowhite;
+    color: black;
 }
-.b
+.rozwinięcie
 {
-font-weight:700 ;   
+    padding: 40px;
+    width: 80%;
+    height: auto;
+    color: black;
+    text-align: left;
 }
-.i
+.początek
 {
-    font-style:italic;
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+    height: auto;
+    color: black;
+    text-align: left;
 }
-.u
+.koniec
+{
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+    height: auto;
+    color: black;
+    text-align: left;
+}
+.Podrecznik
+{
+    margin-top: 5px;
+    width: 100%;
+    height: 1000px;
+    background-color: orange;
+    color: black;
+}
+.tytultabeli
+{
+    margin-left: 30px;
+    margin-top: 10px;
+   
+}
+.tabliczka
+{
+    text-align: center;
+    height:300px;
+    padding: 30px;
+    width:80%;
+    font-weight:bold
+}
+.Tabela
+{
+    border: 1px solid black;
+    width:80%;
+    padding:30px;
+}
+td
+{
+    border: 1px solid black;
+}
+}
+.trescPodrecznik
+{
+    padding: 40px;
+    width: 95%;
+    height: auto;
+    color: black;
+    text-align: center;
+}
+.Formularz
+{
+    margin-top: 5px;
+    width: 100%;
+    height: 900px;
+    background-color:dimgray;
+    
+}
+.Formularz1
+{  
+    
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+    color: black;
+    text-align: left;
+    font-size:small;
+}
+.podsumowanie
+{
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    color:red;
+}
+a
+{
+    color:blueviolet;
+    text-decoration:none;
+    transition:color 0.5s;
+}
+a:visited
+{
+    color:gray
+}
+a:hover
 {
     text-decoration:underline;
-}
-ul
-{
-    list-style-type: circle;
-}
-ol
-{
-    background-color:gray;
-    padding:20px;
-    border-width:5px;
-    border-style:solid;
-    border-color:red;
-    border-radius:25px
+    color:deepskyblue;
 }

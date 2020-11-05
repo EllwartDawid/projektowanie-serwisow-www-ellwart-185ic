@@ -5,6 +5,6 @@ Poniżej przedstawiono użycie 20 różnych metod i właściwości Java Script
 
 ![Strona z funkcjami](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab2/ss/lab2-1.PNG)
 ![Strona z funkcjami](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab2/ss/lab2-2.PNG)
-![Strona z funkcjami](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/lab2/ss/blob/master/lab2-3.PNG)
+![Strona z funkcjami](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab2/ss/lab2-3.PNG)
 ![Strona z funkcjami](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/lab2/ss/blob/master/lab2-4.PNG)
 

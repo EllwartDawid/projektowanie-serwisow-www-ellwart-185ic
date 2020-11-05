@@ -1,0 +1,188 @@
+  <!doctype html>
+    <html lang="pl">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bevan&family=Pacifico&family=Yeseva+One&display=swap" rel="stylesheet">
+        <link rel='stylesheet' type='text/css' href='main.css'/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="main.js"></script>
+    
+        <title>Labolatorium nr 2</title>
+      </head>
+        <body onload="odliczanie(), zmienslajd()">
+            
+            <nav class="navbar navbar-dark bg-dark bg-primary navbar-expand-sm">
+				<a class="navbar-brand" href="#">Lab2</a>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"  aria-controls="mainmenu" aria-expanded="false" aria-label="switchnav">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="mainmenu">
+
+				</div>
+                <div id='navbar'>
+                    <a href="index.html">Strona główna</a>
+                    <a href="slider.html">Slider</a>
+                </div>
+			</nav>
+		
+
+		<section class="center">
+		
+			<div class="container">
+                
+                <header class="text-uppercase font-weight-bold">	
+					<h1>Serwisy www Ellwart Dawid</h1>
+				</header>
+					
+				<div class="row container-fluid">
+
+					<div class="col-sm-6 col-md-4 box">
+						<button type="button" class="btn btn-primary">
+							Przypomnienia <span class="badge badge-light"></span>
+						</button>
+					</div>
+                    
+                    
+                    <div class="col-sm-6 col-md-4 box">
+                        <p>Zobacz napis</p>
+						<button onclick="wyswietlNapis()">kliknij</button>
+						<p id="napis"></p>
+					</div>
+                    
+                    <div class="col-sm-6 col-md-4 box">
+                        <p>Zmień tło</p>
+						<button type="button" onclick="tloStrony()">Kolor tła</button>
+					</div>
+                    
+					<div class="col-sm-6 col-md-4 box">
+                        <p>Pokaż dzisiejszą datę</p>
+						<button onclick="data()">Data</button>
+						<p id="teraz"></p>
+					</div>
+                    
+                    <div class="col-sm-6 col-md-4 box">
+                        <p>Powiadomienie</p>            
+                        <button id="pow" onclick="powiadomienie();"><b>kliknij</b></button>
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-4 box">
+                        <p>Licz kliknięcia</p>
+                        <button type="button" class="btn btn-outline-dark" onclick="buttonNotification()">
+                        <span class="badge badge-pill badge-dark" id="klikniecie">-</span><b> Kliknij mnie!</b>
+                        </button>
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-4 box">
+                        <p>Losowa liczba</p>
+						<button onclick="document.getElementById('random').innerHTML = losoj(0,99)">random</button>
+						<p id="random"></p>
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-4 box">
+                        <p>Najedź na blok</p>
+                        <p onmouseover="najedz(this)" onmouseout="odjedz(this)" class="border">Najedź</p>
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-4 box">
+                        <p>Wybierz przycisk</p>
+						<form> 
+						<input type="button" onclick="wyborOpcji('Dawid')" value="Dawid"> 
+						<input type="button" onclick="wyborOpcji('Ellwart')" value="Ellwart"> 
+						<input type="button" onclick="wyborOpcji('185ic')" value="185ic"> 
+						</form> 
+                        <p id="wybor"></p>
+					</div>
+                    
+                    <div class="col-sm-6 col-md-4 box" id="zmiana">
+                        <p id="zmiana">Wielkość czcionki</p>
+                        <button onclick="czcionka()">Zmień wielkość</button>
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-4 box">
+                        <p>Przytrzymaj i zobacz co się stanie</p>
+                        <p onmousedown="wcisnij(this)" onmouseup="pusc(this)"><button>Naciśnij tutaj.</button></p>
+                    </div>
+                    
+                    
+                    <div class="col-sm-6 col-md-4 box" id="zadanieSuwak">
+                        <div id="zadanieSuwak">Zmień czcionke</div>
+                        <input type="range" id="napis1" min="5" max="100" value="30" onchange="czcionkaSuwak()">
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-4 box" id="zegar">
+                        <p>Czas</p>
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-4 box">
+                        <p>Dodatnia czy ujemna</p>
+                        <input type="text" id="pole" />
+                        <input type="submit" value="Sprawdź" onclick="sprawdz()"/>
+
+                        <div id="wynik"></div>
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-4 box">
+                        <p>Przedział liczb</p>
+                        <input type="text" id="pole1" />
+		                <input type="text" id="pole2" />
+		                <input type="submit" value="Pokaż" onclick="wypisz()"/>
+		
+		                <div id="wynik1"></div>
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-4 box">
+                        <p>Musisz wypełnić pole</p>
+                        <form name="war1" onsubmit="validateForm()" method="post">
+                            Tekst: <input type="text" name="war2">
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-4 box">
+                        <p >Dodaj tło.</p> 
+                        <p><button id="button" onclick="tlo()"><b>Dodaj</b></button>
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-4 box">
+                        <p>Kolor przycisku</p>
+                        <button type="button" id="guzikid" onclick="kolorGuzik()">Kliknij mnie</button>
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-4 box" id="zadanie">
+                        <p>Zmień obramowanie</p>
+                        <button type="button" onclick="obramowanie()">Zmień</button>
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-4 box">
+                        <p>Kolor tekstu na stronie</p>
+                        <button type="button" onclick="tekstCzerwony()">Tekst czerwony</button>
+                        <button type="button" onclick="tekstStandard()">Tekst standardowy</button>
+                    </div>
+                    
+				</div>
+            </div>
+        </section>
+            <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+            <script type="text/javascript">
+                var klikniecie = 0;
+                
+                function buttonNotification(){      
+                    klikniecie ++;
+                    document.getElementById("klikniecie").innerHTML=klikniecie;    
+                }
+            
+            
+            </script>    
+
+
+
+
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+          </body>
+        </html>
+        

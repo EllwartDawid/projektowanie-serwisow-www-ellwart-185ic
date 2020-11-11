@@ -26,9 +26,66 @@
       </header>
 
       <div class="row container-fluid">
-        <div>
-          <button type='button' id='box'>Alert</button>
+
+        <div class="col-sm-6 col-md-4 box">
+          <p>Kliknij Alert</p>
+          <button type='button' id='alert'>Alert</button>
         </div>
+
+        <div class="col-sm-6 col-md-4 box">
+          <p>Najedź na blok</p>
+          <p id='zaddwa'>Najedź</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 box">
+          <p>Wciśnij jakiś klawisz</p>
+          <input type="text" id="zadtrzy">
+        </div>
+
+        <div class="col-sm-6 col-md-4 box">
+          <p>Wprowadź tekst i go zaznacz</p>
+          <input type='text' id='zadcztery'></input>
+        </div>
+
+        <div class="col-sm-6 col-md-4 box">
+          <p id="zadpiec">Kliknij dwa razy tekst</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 box">
+          <p>wpisz coś a zmieni sie czcionka</p>
+          <input type="text" id="zadszesc">
+        </div>
+
+        <div class="col-sm-6 col-md-4 box">
+          <p>Skopiuj tekst i zobacz co sie stanie</p>
+          <input type="text" id="zadsiedem" value='Skopiuj'>
+        </div>
+
+        <div class="col-sm-6 col-md-4 box">
+          <p>Wprowadz liczbe</p>
+          <input type="text" id="zadosiem" />
+
+          <div id="wynik"></div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 box">
+          <p>Prześlij formularz</p>
+          <form id='zaddziewiec' name="war1" method="post">
+            Tekst: <input type="text" name="war2">
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+
+        <div class="col-sm-6 col-md-4 box">
+          <p>Przyciśnij prawy myszy</p>
+          <p><button id="zaddziesiec"><b>Przyciśnij</b></button>
+        </div>
+
+        <div class="col-sm-6 col-md-4 box" id="zadaniejedenascie">
+          <div id="zadanieSuwak">Zmień czcionke</div>
+          <input type="range" id="napis1" min="5" max="100" value="30" onchange="zadJedenascie()">
+        </div>
+
 
       </div>
     </div>

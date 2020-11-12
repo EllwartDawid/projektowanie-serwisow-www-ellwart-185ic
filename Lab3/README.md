@@ -16,15 +16,15 @@ Zdarzenia, które wybrałem:
 
 Zrzut ekranu przed uruchomieniem zdarzeń:
 
-![Zdarzenia](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab3/ss/lab3 zdarz 1.PNG)
+![Zdarzenia](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab3/ss/lab3%20zdarz%201.PNG)
 
 Trzy zrzuty ekranu po uruchomieniu zdarzeń:
 
-![Zdarzenia](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab3/ss/lab3 zdarz 2.PNG)
+![Zdarzenia](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab3/ss/lab3%20zdarz%202.PNG)
 
-![Zdarzenia](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab3/ss/lab3 zdarz 3.PNG)
+![Zdarzenia](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab3/ss/lab3%20zdarz%203.PNG)
 
-![Zdarzenia](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab3/ss/lab3 zdarz 4.PNG)
+![Zdarzenia](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab3/ss/lab3%20zdarz%204.PNG)
 
 Wykonane dziewięć zadań:
 

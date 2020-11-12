@@ -28,4 +28,4 @@ Trzy zrzuty ekranu po uruchomieniu zdarzeń:
 
 Wykonane dziewięć zadań:
 
-![Zadania](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab3/ss/lab3 zad.PNG)
+![Zadania](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab3/ss/lab3%20zad.PNG)

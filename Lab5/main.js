@@ -198,7 +198,7 @@ function naklik() {
         let user4 = responseObj.id;
         let user5 = responseObj.address.geo.lng;
         let user6 = responseObj.name;
-        console.log("Zadanie 3b:", user6)
+        console.log("Zadanie 4:", user6)
         console.log("ID: " + user4);
         console.log("lng: " + user5);
         console.log("Suma:", liczenie(user4, user5))
@@ -265,7 +265,7 @@ function naklik4() {
     fetch(url)
         .then(response => response.json())
         .then(userData => {
-            console.log("Zadanie 5:", userData.name)
+            console.log("Zadanie 5b:", userData.name)
 
             let user4 = userData.address.street;
             let user5 = userData.address.city;

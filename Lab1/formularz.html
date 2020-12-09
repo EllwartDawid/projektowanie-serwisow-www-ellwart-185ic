@@ -11,7 +11,7 @@
     </head>
     <body>
         <div id="container">
-            
+            <!--linki do podstron-->
             <li><a href="index.html">Strona główna</a></li>
             <li><a href="formularz.html">Formularz</a></li>
             <li><a href="podrecznik.html">Podręcznik</a></li>
@@ -19,18 +19,26 @@
         
         <div class="Formularz">
             <div class="Formularz1">
+                <!--formularz z metodą get do żądania danych, jest też metoda post która wysyła żądania do serwera-->
                 <form action='' method="get" enctype="text/plain">
                     <div>
+                        <!--pola do wprowadzenia tekstu ręcznie-->
                         <p>Imie:<input name="Imię" type='text' placeholder="Podaj imie"></p>
                         <p>Nazwisko:<input name="Nazwisko" type='text' placeholder="Podaj nazwisko"></p>
+                        <!--typ email czyli tekst z @, required czyli wymagane pole-->
                         <p>Email:<input name="email" type='email' required placeholder="Podaj email"></p>
+                        <!--typ password czyli litery schowane za kropkami podczas wpisywania-->
                         <p>Hasło:<input type='password' name='haslo' placeholder="Podaj hasło"></p>
-                        <p>Data urodzenia:<input name='data' type='date'></p> 
+                        <!--typ date sprawia ze mozemy wybrać datę z pojawiającego się kalendarza-->
+                        <p>Data urodzenia:<input name='data' type='date'></p>
+                        <!----> 
                         <p>Podaj płeć:</p>
                         <p><label><input type="radio" name="Płeć" value="Kobieta" checked='checked'>Kobieta</label></p>
                         <p><label><input type="radio" name="Płeć" value="Mężczyzna">Mężczyzna</label></p>
+                        <!--textarea czyli pole do wpisania tekstu, w tym przypadku 10 wierszy i 40 kolumn-->
                         <p>Napisz coś o sobie</p>
                         <textarea name='opis' rows='10' cols='40' placeholder='Napisz o sobie dwa zdania'></textarea>
+                        <!--lista z suwakiem do wyboru opcji-->
                         <p>Jaki jest twój ulubiony klub piłkarski?</p>
                         <select name='Klub piłkarski' multiple='multiple' size="7">
                             <option>Real Madryt</option>
@@ -42,7 +50,7 @@
                             <option>PSG</option>
                             <option>inny</option>
                         </select>
-      
+                        <!--typ chckbox czyli kratki do zaznaczenia przy właściwych opcjach-->
                         <p>Kto jest najlepszym piłkarzem na świecie?</p>
                         <input type="checkbox" name='Piłkarz' value='Ronaldo'>Ronaldo<br>
                         <input type="checkbox" name='Piłkarz' value='Messi'>Messi<br>

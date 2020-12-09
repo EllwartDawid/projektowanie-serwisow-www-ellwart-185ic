@@ -2,7 +2,7 @@
                 let x = document.getElementsByClassName("badge-light");
                 x[0].innerHTML = 6; // x[0] to pierwszy znaleziony element
 
-
+                // funkcja pobiera element o id=napis i podstawia w to miejsce "Ellwart Dawid"
                 function wyswietlNapis() {
                     document.getElementById("napis").innerHTML = "Ellwart Dawid";
                 }
@@ -26,7 +26,7 @@
                 function najedz(obj) {
                     obj.innerHTML = "Ellwart"
                 }
-  
+                
                 function odjedz(obj) {
                     obj.innerHTML = "Dawid"
                 }

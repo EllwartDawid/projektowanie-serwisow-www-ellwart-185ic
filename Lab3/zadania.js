@@ -5,7 +5,7 @@ function zadJeden() {
 };
 
 const tablica = [34, 54, 78, 242, 56];
-
+//suma tablicy
 function zadDwa() {
 	var wynik = 0;
 	for (var i = 0; i < tablica.length; i++) {
@@ -13,7 +13,7 @@ function zadDwa() {
 	};
 	console.info(wynik);
 };
-
+// co druga litera duża
 var litera = 'dawid'
 function zadTrzy(litera) {
 	let wynikk = '';
@@ -30,7 +30,7 @@ function zadTrzy(litera) {
 
 var pierwsza = 5
 var druga = 4
-
+// mnożenie licz całkowitych
 function zadCztery(pierwsza, druga) {
 
 	if (Number.isInteger(pierwsza) && Number.isInteger(druga)) {
@@ -58,14 +58,14 @@ function zadPiec(imie, miesiac) {
 		return console.info(imie + " uczy się JS");
 };
 
-var tekst = "Ania|Marcin|Bartek|Piotr|Kuba|Beata|Agnieszka";
+var tekst = "Ania|Marcin|Bartek|Piotr|Kuba|Beata|Agnieszka"; //tekst podzielony na części 
 var znak = '|';
 function zadSzesc(tekst, znak) {
-	var imiona = tekst.split(znak);
-	var posortowane = imiona.sort();
-	return console.info(posortowane.join(znak));
+	var imiona = tekst.split(znak); //rozdzielam tekst za pomocą split()
+	var posortowane = imiona.sort(); //sortuję tekst alfabetycznie
+	return console.info(posortowane.join(znak)); //posortowany tekst łączę przy pomocy '|'
 };
-
+//funkcja zamienia na duże litery
 const tab = ["Ania", "Marcin", "Bartek", "Piotr"]
 function zadSiedemd(tab) {
 	for (let i = 0; i < tab.length; i++) {
@@ -105,7 +105,7 @@ const users = [
 	"Betata Lecka",
 	"Katarzyna Melecka"
 ];
-
+//sprawdza ilość żeńskich imion w tabeli
 function countWomanInTable(users) {
 	var pani = 0;
 	for (let i = 0; i < users.length; i++) {

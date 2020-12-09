@@ -34,7 +34,7 @@ let aiPoints = 0;
 function player() {
     //ostylowanie pierwszego gracza
     ctx.fillStyle = '#7FFF00';
-    ctx.fillRect(playerX, playerY, paddelWidth, paddelHeight);
+    ctx.fillRect(playerX, playerY, paddelWidth, paddelHeight); // metoda rysująca prostokąt 
     //reakcja na odbicie gracza
     if (ballX - paddelWidth <= playerX && ballY >= playerY - ballSize && ballY <= playerY + paddelHeight) {
         ballSpeedX = -ballSpeedX;
@@ -100,16 +100,18 @@ function table() {
 
 }
 // Na jakiej wysokości zaczyna się canvas
-topCanvas = canvas.offsetTop;
+topCanvas = canvas.offsetTop; //określa jak daleko od krawędzi przeklądarki znajduje się canvas
 console.log(topCanvas)
 
 function playerPosition(e) {
-    playerY = e.clientY - topCanvas - paddelHeight / 2;
+    playerY = e.clientY - topCanvas - paddelHeight / 2; // clientY to pozycja myszy znajdująca się w obiekcie event e, odejmujemy topCanvas żeby znać pozycje w canvasie
+                                                        //odejmujemy wielkość paletki podzieloną przez dwa po to żeby paletka reagowała na mysz gdy mysz jest na jej środku
     //zabezpieczenie żeby paletka nie wyjechała poza canvas
+    //gdy wyjeżdża na dole
     if (playerY >= ch - paddelHeight) {
         playerY = ch - paddelHeight
     }
-
+    //gdy wyjeżdża na górze
     if (playerY <= 0) {
         playerY = 0;
     }

@@ -18,36 +18,36 @@ var person = {
 function zadanie1(callback) {
     console.log("Zadanie 1:");
     const arg = "koniec"
-    callback(arg)
+    callback(arg)    //dodawanie(param)
 }
 
-function dodawanie(param) {
+function dodawanie(param) {  // dodawanie(arg='koniec')
     let a = person.age;
     let b = person.animals.reksio.age;
     const suma = a + b;
     console.log("Suma wieku właściciela i jego psa wynosi: ", suma);
-    console.log(param);
+    console.log(param);   //arg='koniec'
 };
 
-document.getElementById("guzik1").addEventListener("click", function () { zadanie1(dodawanie) });
+document.getElementById("guzik1").addEventListener("click", function () { zadanie1(dodawanie) }); //wywołanie funkcji zadanie1 z funkcją dodawanie jako callback
 
 //Zadanie 1b
 
 function zadanie1a(callback) {
     console.log("Zadanie 1a:");
     const arg = "koniec";
-    callback(arg);
-};
+    callback(arg); //ciagZnakow(param)
+}; 
 
-function ciagZnakow(param) {
+function ciagZnakow(param) {  //ciagZnakow(arg='koniec')
     let c = person.name;
     let d = person.animals.dog;
-    console.log(`${c} ma psa: ${d}`);
-    console.log(param);
+    console.log(`${c} ma psa: ${d}`); //template strings
+    console.log(param);  //arg="koniec"
 };
 
 
-document.getElementById("guzik2").addEventListener("click", function () { zadanie1a(ciagZnakow) });
+document.getElementById("guzik2").addEventListener("click", function () { zadanie1a(ciagZnakow) }); //wywołanie funkcji zadanie1a z funkcją ciagZnakow jako callback
 
 // Zadanie 2
 
@@ -57,7 +57,7 @@ function liczenie(x, y) {
 
 function naklikk() {
     return new Promise((resolve, reject) => {
-        fetch('https://jsonplaceholder.typicode.com/users/1')
+        fetch('https://jsonplaceholder.typicode.com/users/1') // pobranie biblioteki
             .then(response => response.json())
             .then(userData => {
                 console.log("Zadanie 2:", userData.name)
@@ -76,11 +76,11 @@ function naklikk() {
 };
 document.getElementById("guzik3").addEventListener("click", function () {
     naklikk()
-        .then((response) => { console.log("Suma: ", response) })
+        .then((response) => { console.log("Suma: ", response) }) // funkcja wyżej wykonuje to co ma do roboty i następnie przechodzi tutaj, response = liczenie(user2, user3)
 
-        .catch(error => console.log("Błąd!!!!", error))
+        .catch(error => console.log("Błąd!!!!", error)) // jeżeli błąd
 
-        .finally(() => console.log("Koniec przykładu"))
+        .finally(() => console.log("Koniec przykładu")) // zawsze na końcu
 });
 
 // Zadanie 2b
@@ -111,11 +111,11 @@ function obietnica() {
 };
 document.getElementById("guzik4").addEventListener("click", function () {
     obietnica()
-        .then((response) => { console.log("Nowy Obiekt: ", response) })
+        .then((response) => { console.log("Nowy Obiekt: ", response) }) // funkcja wyżej wykonuje to co ma do roboty i następnie przechodzi tutaj, response = nowyObiekt(user4, user5)
 
-        .catch(error => console.log("Błąd!!!!", error))
+        .catch(error => console.log("Błąd!!!!", error))  // jeżeli błąd
 
-        .finally(() => console.log("Koniec przykładu"))
+        .finally(() => console.log("Koniec przykładu"))  // zawsze na końcu
 });
 // Zadanie 3
 
@@ -142,9 +142,9 @@ function letsCalculateAsync() {
     });
 
 };
-document.getElementById("guzik5").addEventListener("click", async function () {
+document.getElementById("guzik5").addEventListener("click", async function () { // async przed funkcją oznacza że ta funkcja jest traktowana jako asynchroniczna
 
-    const dodawanie = await letsCalculateAsync();
+    const dodawanie = await letsCalculateAsync();  //nie idzie dalej dopóki nie wykona się funkcja letsCalculateAsync
     console.log("Suma:", dodawanie);
 
 });
@@ -175,25 +175,25 @@ function someAsyncFunction() {
     });
 
 };
-document.getElementById("guzik6").addEventListener("click", async function () {
+document.getElementById("guzik6").addEventListener("click", async function () {  // async przed funkcją oznacza że ta funkcja jest traktowana jako asynchroniczna
 
-    const tworzenie = await someAsyncFunction();
+    const tworzenie = await someAsyncFunction(); //nie idzie dalej dopóki nie wykona się someAsyncFunction
     console.log(tworzenie);
 
 });
 
-// Zadanie 4
+// Zadanie 4  Ajax - wysyłanie zapytań na serwer bez przeładowania strony
 
 function naklik() {
     let url = 'https://jsonplaceholder.typicode.com/users/5';
-    let xhr = new XMLHttpRequest();
+    let xhr = new XMLHttpRequest(); //klasa wbudowana w JS
 
-    xhr.open('GET', url);
+    xhr.open('GET', url);   //otwieramy połączenie z serwerem
 
     xhr.responseType = 'json';
     xhr.send();
 
-    xhr.onload = function () {
+    xhr.onload = function () {   //funkcja wykonuje sie po załadowaniu
         let responseObj = xhr.response;
         let user4 = responseObj.id;
         let user5 = responseObj.address.geo.lng;
@@ -214,14 +214,14 @@ document.getElementById("guzik7").addEventListener("click", function () { naklik
 
 function naklik2() {
     let url = 'https://jsonplaceholder.typicode.com/users/6';
-    let xhr = new XMLHttpRequest();
+    let xhr = new XMLHttpRequest(); //klasa wbudowana w JS
 
-    xhr.open('GET', url);
+    xhr.open('GET', url);  //otwieramy połączenie z serwerem
 
     xhr.responseType = 'json';
     xhr.send();
 
-    xhr.onload = function () {
+    xhr.onload = function () {  //funkcja wykonuje sie po załadowaniu
         let responseObj = xhr.response;
         let user4 = responseObj.address.street;
         let user5 = responseObj.address.city;
@@ -279,10 +279,10 @@ function naklik4() {
 document.getElementById("guzik10").addEventListener("click", function () { naklik4() });
 
 //Zadanie 6
-
+// Axios - wyrzuca błędy sieciowe a fetch nie wyrzuca
 
 function naklik5() {
-    axios.get('https://jsonplaceholder.typicode.com/users/9')
+    axios.get('https://jsonplaceholder.typicode.com/users/9') // wysyła żadanie do podanego adresu
         .then(userData => {
 
             console.log("Zadanie 6:", userData.name)

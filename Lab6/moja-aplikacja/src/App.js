@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import Glowny from './Glowny'
+import CompClass from './CompClass.jsx';
+import CompFunction from './CompFunction.jsx';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component {
+  render() {
+    const title = 'ReactJS'
+
+    return (
+      <div className='card'>
+        <h1>Hello {title}</h1>
+        <CompClass />
+        <CompFunction />
+        <Glowny />
+
+      </div>
+    )
+  }
+
 }
 
 export default App;

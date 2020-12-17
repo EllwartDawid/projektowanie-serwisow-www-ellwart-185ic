@@ -52,6 +52,6 @@ Do stworzenia trzeciej podstrony wykorzystałem komponenty:
 
 ![komponent potomny2](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab7/ss/transfer1.PNG)
 
-![komponent potomny2](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab7/ss/transfer2.png)
+![komponent potomny2](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab7/ss/transfer2.PNG)
 
 

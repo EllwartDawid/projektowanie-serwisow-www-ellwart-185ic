@@ -1,62 +1,57 @@
 
-Tworzenie komponentów funkcyjnych i klasowych
+Należy stworzyć trzy “podstrony” (komponenty link, Switch i Route)
 
-Komponent funkcyjny:
+Kod, który tworzy ścieżki do 3 podsron za pomocą React-Route:
 
-![komponent funkcyjny](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab6/ss/komponentfunkcyjny.PNG)
+![komponent funkcyjny](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab7/ss/podstrony.PNG)
 
-Komponent klasowy:
+Do stworzenia pierwszej podstrony wykorzystałem komponenty:
+- ListSubheader
+- List
+- ListItem
+- ListItemIcon
+- ListItemText
+- Collapse
+- InboxIcon
+- DraftsIcon
+- SendIcon
+- ExpandLess
+- ExpandMore
+- StarBorder
 
-![komponent klasowy](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab6/ss/komponentklasowy.PNG)
+![komponent klasowy](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab7/ss/home.PNG)
 
-Należy utworzyć komponent nadrzędny i dwa komponenty potomne, mogą to być np. tabele, listy ‘ol’ lub ‘ul’, obrazki itp. Dowolność wyboru, aby nie były to przykłady zbyt zbliżone do tych z repo
+![komponent klasowy](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab7/ss/home1.PNG)
 
-Komponent nadrzędny:
+Do stworzenia drugiej podstrony, którą jest formularz wykorzystałem komponenty:
+- TextField
+- Button
+- FormControlLabel
+- Radio
+- RadioGroup
+- FormLabel
+- FormControl
+- InputLabel
+- Input
 
-![komponent nadrzędny](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab6/ss/komponentnadrzedny.PNG)
+![komponent nadrzędny](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab7/ss/form.PNG)
 
-Komponenty potomne:
+Do stworzenia trzeciej podstrony wykorzystałem komponenty:
+- Grid
+- List
+- Card
+- CardHeader
+- ListItem
+- ListItemText
+- ListItemIcon
+- Checkbox
+- Button
+- Divider
 
-![komponent potomny1](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab6/ss/komponentpotomny1.PNG)
+![komponent potomny1](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab7/ss/transfer.PNG)
 
-![komponent potomny2](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab6/ss/komponentpotomny2.PNG)
+![komponent potomny2](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab7/ss/transfer1.PNG)
 
-Należy wykorzystać props (atrybuty, właściwosci) przy przekazywaniu danych do komponentu potomnego
-Komponent nadrzędny:
+![komponent potomny2](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab7/ss/transfer2.png)
 
-![komponent potomny2](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab6/ss/props1.png)
 
-Komponent potomny:
-
-![komponent potomny2](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab6/ss/props2.png)
-
-Należy wykorzystać state (stan) przy tworzeniu komponentu klasowego
-
-![komponent potomny2](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab6/ss/state.png)
-
-Należy dodać plik .css do wybranych komponentów
-
-![komponent potomny2](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab6/ss/css.png)
-
-Należy zastosować funkcję map() przy generowaniu komponentów i należy pamiętać o atrybucie key
-
-![komponent potomny2](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab6/ss/map.png)
-
-Należy zrealizowac wysyłanie funkcji za pomocą ‘props’
-
-![komponent potomny2](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab6/ss/funprops1.png)
-
-![komponent potomny2](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab6/ss/funprops2.png)
-
-Funkcja alert:
-
-![komponent potomny2](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab6/ss/alert.PNG)
-
-Przed i po przyciśnięciu guzika change title:
-Przed:
-
-![komponent potomny2](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab6/ss/przedchange.PNG)
-
-Po:
-
-![komponent potomny2](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab6/ss/pochange.PNG)

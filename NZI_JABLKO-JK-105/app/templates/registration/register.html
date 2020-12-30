@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Sign Up{% endblock title %}
+
+{% block content %}
+  <h2 class="card-header">Sign Up with E-mail Adress</h2>
+  <br>
+  <div class="card-body text-left">
+    <form method="post">
+        {{ user_form.as_p }}
+        {% csrf_token %}
+      <button class="btn btn-outline-secondary btn-sm" type="submit">Sign Up</button>
+      <a href="{% url 'home' %}" class="btn-outline-secondary btn-sm">Back to Homepage</a>
+    </form>
+  </div>
+{% endblock content %}

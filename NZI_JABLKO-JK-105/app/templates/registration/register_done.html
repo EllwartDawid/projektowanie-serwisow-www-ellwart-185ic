@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+  <h2 class="card-header">Welcome {{ new_user.first_name }}!</h2>
+  <br>
+  <div class="card-body text-left">
+    <p>Your account has been successfully created.</p>
+    <a href="{% url 'login' %}" class="btn-outline-secondary btn-sm">Log In</a>
+    <br>
+    <a href="{% url 'home' %}" class="btn-outline-secondary btn-sm">Back to Homepage</a>
+  </div>
+{% endblock content %}

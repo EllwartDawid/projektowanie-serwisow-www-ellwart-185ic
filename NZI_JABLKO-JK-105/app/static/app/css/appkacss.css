@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+
+    font-size: 10px;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url("./images/korepder-tlo.png") no-repeat;
+    background-size: cover;
+}
+
+
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+
+
+}
+
+
+.spinner{
+    opacity: 0;
+    width: 17rem;
+    height: 17rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: fadeIn 1s ease-in forwards;
+
+}
+
+
+#logo{
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    margin-left: 25px;
+    margin-top: 25px;
+    animation: puls 3s linear infinite;
+
+}
+
+@keyframes puls{
+
+    0%{
+        transform: scale(1) rotate(0);
+    }
+    50%{
+        transform: scale(.8) rotate(0);
+    }
+    100%{
+        transform: scale(1) rotate(0);
+    }
+}
+
+
+
+
+.spinner-in{
+    width: 100%;
+    height: 100%;
+    border: 1rem solid #111010;
+    border-radius: 50%;
+    border-top-color: #01700f;
+    border-bottom-color: #01700f;
+    border-left-color: #012e07;
+    border-right-color: #012e07;
+    animation: rotate 3s linear infinite;
+    box-shadow: 0 0 10px #01700f,
+                0 0 20px #014d0b,
+                0 0 30px #012e07,
+                0 0 40px #012706;
+
+
+
+}
+
+@keyframes rotate{
+
+    0%{
+        transform: scale(1) rotate(-360deg);
+    }
+    50%{
+        transform: scale(.8) rotate(0);
+    }
+    100%{
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+
+
+.preload{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #0e0e0e;
+    z-index: 200;
+    }
+.preload.display-none{
+    position: fixed;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #0e0e0e;
+    z-index: -10;
+    transition: all 0.7s;
+    }
+
+
+#logo-panel{
+
+    width: 550px;
+    margin-left: 290px;
+
+
+}
+
+.btn{
+
+    width: 50%;
+    background: none;
+    border: 2px solid #4caf50;
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 12px 0;
+}

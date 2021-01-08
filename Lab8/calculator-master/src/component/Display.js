@@ -1,18 +1,31 @@
-import React from "react";
-import PropTypes from "prop-types";
-
-import "./Display.css";
+import React from 'react';
+import './Display.css';
 
 export default class Display extends React.Component {
-  static propTypes = {
-    value: PropTypes.string,
-  };
+  constructor(props) {
+    super(props);
+    this.onTextareaChanged = this.onTextareaChanged.bind(this);
+  }
+
+  onTextareaChanged() {
+    
+  }
 
   render() {
     return (
-      <div className="component-display">
-        <div>{this.props.value}</div>
+      <div className="display-toolbar">
+        <form className="display">
+          <textarea className="display-formula" onChange={this.onTextareaChanged} value={this.props.formula.join("")} ></textarea>
+          <textarea className="display-input" id="display" rows="1" onChange={this.onTextareaChanged} value={this.props.input}></textarea>
+        </form>
+        <div className="toolbar">
+          <div className="toolbar-item" id="view-history" onClick={this.props.onHistory}>{this.props.isShowHistory ? "Keypad" : "History"}</div>
+          <div>
+            <span className="toolbar-item" onClick={this.props.onBackspace} id="backspace"><i className="fas fa-backspace"></i></span>
+          </div>
+
+        </div>
       </div>
-    );
+    )
   }
 }

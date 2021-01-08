@@ -1,13 +1,68 @@
-.component-display {
-  background-color: #858694;
-  color: white;
-  text-align: right;
-  font-weight: 200;
-  flex: 0 0 auto;
+.display {
   width: 100%;
+  display: flex;
+  flex-flow: column;
+  -ms-flex-flow: column;
+  justify-content: space-between;
+  padding: 15px 15px 0 15px;
+  background-color: #fff;
+  flex-grow: 1;
 }
 
-.component-display > div {
-  font-size: 2.5rem;
-  padding: 0.2rem 0.7rem 0.1rem 0.5rem;
+.display-formula,
+.display-input {
+  width: 100%;
+  resize: none;
+  font-family: Nunito Sans, Helvetica, Arial, sans-serif;
+  border: none;
+  outline: none;
+  text-align: right;
+  background-color: inherit;
 }
+
+.display-formula {
+  flex-grow: 1;
+  font-size: 2rem;
+}
+
+.display-input {
+  flex-shrink: 0;
+  font-size: 1.75rem;
+  color: #888;
+  white-space: nowrap;
+  padding-bottom: 15px;
+}
+
+/* Toolbar */
+
+.toolbar {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  color: #3da4ab;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.toolbar-item:hover {
+  cursor: pointer;
+  color: #0e9aa7;
+}
+
+#view-history {
+  -webkit-transition: all 0.35s ease-out;
+  -moz-transition: all 0.35s ease-out;
+  transition: all 0.35s ease-out;
+}
+
+#backspace {
+  margin-left: 30px;
+  font-size: 1.5rem;
+}
+
+

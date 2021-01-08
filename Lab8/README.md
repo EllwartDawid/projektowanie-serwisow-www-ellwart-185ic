@@ -9,11 +9,11 @@ Wyniki komendy difftool
 
 App.js
 
-![komponent funkcyjny](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab8/ss/App.PNG)
+![komponent funkcyjny](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab8/ss/app.PNG)
 
-![komponent funkcyjny](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab8/ss/App1.PNG)
+![komponent funkcyjny](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab8/ss/app1.PNG)
 
-![komponent funkcyjny](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab8/ss/App2.PNG)
+![komponent funkcyjny](https://github.com/EllwartDawid/projektowanie-serwisow-www-ellwart-185ic/blob/master/Lab8/ss/app2.PNG)
 
 
 Button.js
